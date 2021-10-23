@@ -6,6 +6,88 @@
 html{
   scroll-behavior: smooth;
 }
+.toggle-btn{
+  position: fixed;
+  right: 0;
+  margin:8px;
+  padding:10px;
+  width: 60px;
+  height:60px;
+  z-index: 2000;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  border:none;
+  outline:none;
+  background:white;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.toggle-btn:active,.toggle-btn:focus{
+  border:none;
+  outline: none;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4000;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: transparent;
+  background:linear-gradient(136deg, rgb(68, 132, 206), rgb(26, 215, 192), rgb(255, 155, 17), rgb(155, 89, 182), rgb(255, 127, 127), rgb(236, 240, 241));
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: transparent;
+  background:linear-gradient(136deg, rgb(68, 132, 206), rgb(26, 215, 192), rgb(255, 155, 17), rgb(155, 89, 182), rgb(255, 127, 127), rgb(236, 240, 241));
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-decoration: none;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.item{
+  margin-left: 30px;
+  transition: .5s;
+  font-weight: 500;
+  text-transform: uppercase;
+  background:transparent;
+  border-left:2px solid transparent;
+  border-right:2px solid transparent;
+  border-top:2px solid transparent;
+  color:black;
+}
 #particles-js{
     height: 100vh;
     width: 100%;
@@ -124,8 +206,9 @@ html{
   display: flex;
 }
 .projectcards .card a{
-  width: 40%;
+  width: fit-content;
   margin-right: 20px;
+  white-space: nowrap;
 }
 .projectcards .card a{
   text-decoration: none;
@@ -136,6 +219,37 @@ html{
 .feedback{
   width: 100%;
   height: 100vh;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.feedback h1{
+  font-weight: lighter;
+}
+.feedback input, .feedback textarea{
+  border:none;
+  outline: none;
+  border-radius: 5px;
+  float: left;
+  margin-left: 20px;
+}
+.feedback  input{
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding: 10px 20px 10px 20px;
+  width: 50%;
+}
+.feedback .feed{
+  padding: 10px 20px 10px 20px;
+  width: 80%;
+  height: 200px;
+}
+.feedback .send{
+  float: left;
+  margin-top: 20px;
+  width: 35%;
 }
 @-webkit-keyframes BackgroundAnimation {
     0% {
@@ -237,5 +351,12 @@ html{
     }
     .about h1{
       font-size: 11vw;
+    }
+    .projectcards .card .buttons{
+      display: flex;
+      flex-direction: column;
+    }
+    .projectcards .card a{
+      margin-bottom: 25px;
     }
 }
