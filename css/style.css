@@ -76,6 +76,8 @@ html{
     flex-direction: column;
     width: 100%;
     height: auto;
+    background: #262626;
+    padding-bottom: 40px;
     border-bottom: 2px solid #161616;
 }
 .about .text{
@@ -84,10 +86,12 @@ html{
 .about h1{
   margin: 30px;
   font-size: 4vw;
+  color: white;
   font-weight: lighter;
 }
 .about p{
   line-height: 40px;
+  color: white;
 }
 .projects{
   text-align: center;
@@ -113,12 +117,25 @@ html{
   margin: 10px;
   margin-bottom: 20px;
 }
-.projectcards .card button{
-  width: 45%;
+.projectcards .card p{
+  line-height: 30px;
+}
+.projectcards .card .buttons{
+  display: flex;
+}
+.projectcards .card a{
+  width: 40%;
+  margin-right: 20px;
 }
 .projectcards .card a{
   text-decoration: none;
-  color: white;
+  color: black;
+  padding: 10px 12px 10px 12px;
+  border-radius: 5px;
+}
+.feedback{
+  width: 100%;
+  height: 100vh;
 }
 @-webkit-keyframes BackgroundAnimation {
     0% {
