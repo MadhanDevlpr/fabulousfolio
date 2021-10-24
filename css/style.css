@@ -15,12 +15,12 @@ html{
 }
 .toggle-btn{
   position: fixed;
-  right: 0;
-  margin:8px;
+  left: 0;
+  margin:18px;
   padding:10px;
   width: 60px;
   height:60px;
-  z-index: 2000;
+  z-index: 1;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -29,29 +29,34 @@ html{
   outline:none;
   background:white;
   border-radius: 5px;
-  border: 2px solid white;
   background: linear-gradient(136deg, rgb(68, 132, 206), rgb(26, 215, 192), rgb(255, 155, 17), rgb(155, 89, 182), rgb(255, 127, 127), rgb(236, 240, 241)) 0% 0% / 1200% 1200%;
-	  background-size: 1200% 1200%;
-	  animation: BackgroundAnimation 70s ease infinite
+  background-size: 1200% 1200%;
+  animation: BackgroundAnimation 70s ease infinite;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+  cursor: pointer;
 }
 .toggle-btn:active,.toggle-btn:focus{
   border:none;
   outline: none;
 }
 .sidenav {
-  height: 100%;
+  height: fit-content;
   width: 0;
   position: fixed;
-  z-index: 4000;
+  z-index: 2;
   top: 0;
-  right: 0;
+  left: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  padding-bottom: 30vh;
+  border-radius: 10px;
   background: linear-gradient(136deg, rgb(68, 132, 206), rgb(26, 215, 192), rgb(255, 155, 17), rgb(155, 89, 182), rgb(255, 127, 127), rgb(236, 240, 241)) 0% 0% / 1200% 1200%;
 	background-size: 1200% 1200%;
 	animation: BackgroundAnimation 70s ease infinite;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  box-shadow: 0 0 100px black;
+  box-shadow: 0 0 100px rgba(0,0,0,0.45);
 }
 
 .sidenav a {
@@ -177,9 +182,9 @@ html{
     flex-direction: column;
     width: 100%;
     height: auto;
-    background: #262626;
-    padding-bottom: 40px;
-    border-bottom: 2px solid #161616;
+    background: #f8f9fa;
+    padding-bottom: 60px;
+    box-shadow: 0 0 100px rgba(0,0,0,0.45);
 }
 .about .text{
   width: 80%;
@@ -187,12 +192,10 @@ html{
 .about h1{
   margin: 30px;
   font-size: 4vw;
-  color: white;
   font-weight: lighter;
 }
 .about p{
   line-height: 40px;
-  color: white;
 }
 .projects{
   text-align: center;
@@ -237,7 +240,7 @@ html{
 }
 .feedback{
   width: 100%;
-  height: 100vh;
+  height: auto;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -246,6 +249,7 @@ html{
 }
 .feedback h1{
   font-weight: lighter;
+  margin-top: 85px;
 }
 .feedback input, .feedback textarea{
   border:none;
@@ -253,6 +257,7 @@ html{
   border-radius: 5px;
   float: left;
   margin-left: 20px;
+
 }
 .feedback  input{
   margin-right: 20px;
@@ -420,4 +425,16 @@ html{
     .projectcards .card a{
       margin-bottom: 25px;
     }
+}
+@media(max-width:305px){
+  .hero a{
+    white-space: nowrap;
+  }
+  .hero h1{
+    font-size: 12vw;
+  }
+  .hero h2{
+    font-size: 8vw;
+    white-space: nowrap;
+  }
 }
