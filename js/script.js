@@ -11,7 +11,7 @@ const closeNav = () => {
 const hover = () => {
   if(window.innerWidth >= 1020){
     title.innerHTML = "<span id=\"mm\">Madhan Aadithya</span>"
-    title.style.fontSize = "6.6458333333333335vw"
+    title.style.fontSize = "8.6458333333333335vw"
   }
   else{
     title.innerHTML = "<span id=\"mm\">M</span>adhan"

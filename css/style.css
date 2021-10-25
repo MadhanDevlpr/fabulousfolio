@@ -120,6 +120,7 @@ html{
     color: #f8f9fa;
     transition: .8s;
     white-space: nowrap;
+    padding-bottom: 10vh;
 }
 .hero #mm{
   color: #f9f9fa;
@@ -392,13 +393,13 @@ html{
 }
 @media(max-width:800px){
     .hero h1{
-        font-size:   8.5vw;
+        font-size:   15.5vw;
         white-space: nowrap;
         left: 2%;
         position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
     .projectcards .card{
       width: 80%;
@@ -430,7 +431,7 @@ html{
     white-space: nowrap;
   }
   .hero h1{
-    font-size: 12vw;
+    font-size: 13vw;
   }
   .hero h2{
     font-size: 8vw;
