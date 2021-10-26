@@ -133,7 +133,7 @@ html{
     transform: translate(-50%,-50%);
     font-size:  2.6458333333333335vw;
     color: #f8f9fa;
-    width: 17.5ch;
+    width: 19.5ch;
     animation: typing 2.5s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
