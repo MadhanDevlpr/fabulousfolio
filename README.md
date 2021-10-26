@@ -1,5 +1,5 @@
 ## Fabulousfolio
-This a amazing site with css aniamtion and also javascript animatons that make this "Fabulous"
+This a amazing site with css and js animations that make this "Fabulous"
 
 
 <img width="952" alt="2021-10-26 (3)" src="https://user-images.githubusercontent.com/81558579/138856683-7cca2b73-b783-4bb3-843d-fc37f18bf4e2.png">
