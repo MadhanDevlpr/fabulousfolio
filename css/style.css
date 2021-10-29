@@ -299,12 +299,33 @@ html{
   font-size: 40px;
   color: white;
 }
-.footer p{
+.footer #copy{
   color: white;
   margin-top: 40px;
 }
-.footer p i{
-  margin-right: 20px;
+.footer #copy a{
+  text-decoration: none;
+  color:white;
+  text-shadow: 0 0 10px white;
+}
+.footer p{
+  color: white;
+  margin-top: 10px;
+}
+.footer p a{
+  text-decoration: none;
+  color: transparent;
+  background: linear-gradient(to right, #a0a0a0, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 1s;
+}
+.footer p a:hover{
+  text-decoration: none;
+  color: transparent;
+  background: linear-gradient(to right,white,#a0a0a0);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 @keyframes typing {
   from {
