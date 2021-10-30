@@ -1,8 +1,11 @@
 ## Fabulousfolio
 This a amazing site with css and js animations that make this "Fabulous"
 
+Preview: 
 
-<img width="952" alt="2021-10-26 (3)" src="https://user-images.githubusercontent.com/81558579/138856683-7cca2b73-b783-4bb3-843d-fc37f18bf4e2.png">
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/81558579/139523841-654f07e4-f84a-4017-b6ea-435393c4313f.gif)
+
+
 
 
 First of all clone my repository in your machine.
