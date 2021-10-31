@@ -156,9 +156,6 @@ html{
     color: #f8f9fa;
     font-weight: 500;
     font-size: 1rem;
-    animation-name: rise;
-    animation-duration: 9s;
-
 }
 .hero a:hover{
     color: black;
