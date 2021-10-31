@@ -204,9 +204,12 @@ html{
 }
 .about img{
   margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(50, 50, 50, 1)
 }
 .about p{
   line-height: 40px;
+  margin-top: 60px;
 }
 .projects{
   text-align: center;
@@ -412,6 +415,9 @@ html{
     }
     .projects h1{
       font-size: 8vw;
+    }
+    .about img{
+      display: none;
     }
 }
 @media(max-width:800px){
