@@ -25,7 +25,7 @@ And the another thing is to integrate formcarry to your form in the last section
 ```
 And you can add all your projects title and some content about it and change the text in the footer.
 
-If you completed all that and you are satisfied with Fabulousfolio, please star me on github.
+If you completed all that and you are satisfied with Fabulousfolio, please star this repo.
 
 
 I've also added two of my projects in the live demo.
